@@ -1,0 +1,13 @@
+# Exclude dotenv files
+*.env.test
+*.env
+
+#exclude productimages
+pics/
+thumbnails/
+
+#exclude testbestand
+test*
+
+#include variables.env
+!variables.env

@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  database_server:
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    env_file:
+      - variables.env
+    ports:
+      - target: 1433
+        published: 1434
+        protocol: tcp
+        mode: host
+  web_server:
+    build:
+      dockerfile: Dockerfile-webserver
+    restart: always
+    env_file:
+      - variables.env
+    depends_on:
+      - database_server
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host
+    volumes:
+      - ./applicatie/:/applicatie/
+      - ./webserver-setup/:/setup/
+    entrypoint: [ "sh", "/setup/bootstrap.sh" ]
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'  # disable saving logs
+    ports:
+      - 1025
+      - 8025

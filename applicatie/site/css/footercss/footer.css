@@ -1,0 +1,95 @@
+.deneb_footer .widget_wrapper {
+    background-color: #E9ECEF;
+}
+@media (max-width: 767px) {
+    .deneb_footer .widget_wrapper .widget {
+        margin-bottom: 40px;
+    }
+}
+
+.deneb_footer .widget_wrapper .widget .widget_title {
+    margin-bottom: 30px;
+}
+
+.deneb_footer .widget_wrapper .widget .widget_title h4 {
+    font-weight: bold;
+}
+
+
+.deneb_footer .widget_wrapper .widegt_about p {
+    margin-bottom: 20px;
+}
+
+.deneb_footer .widget_wrapper .widegt_about .social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.deneb_footer .widget_wrapper .widegt_about .social li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #E9ECEF;
+    color: #0A142F;
+    font-size: 14px;
+    -webkit-transition: all all 0.5s ease-out 0s;
+    -moz-transition: all all 0.5s ease-out 0s;
+    -ms-transition: all all 0.5s ease-out 0s;
+    -o-transition: all all 0.5s ease-out 0s;
+    transition: all all 0.5s ease-out 0s;
+}
+
+
+
+.deneb_footer .widget_wrapper .widget_link ul{
+    padding: 0;
+}
+
+.deneb_footer .widget_wrapper .widget_link ul li {
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+.deneb_footer .widget_wrapper .widget_link ul li a {
+    text-transform: capitalize;
+    color: #E60056;
+    text-decoration: none;
+}
+
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .icon {
+    font-size: 12px;
+    color: #E60056;
+    margin-right: 10px;
+}
+
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p a {
+    color: #7a808d;
+}
+
+.deneb_footer .copyright_area {
+    background: #edecf0;
+    padding: 10px 0;
+}
+
+.deneb_footer .copyright_area .copyright_text {
+    text-align: center;
+}
+
+.deneb_footer .copyright_area .copyright_text p {
+    color: #011a3e;
+}
+
+.deneb_footer .seo_text {
+    background: #edecf0;
+    padding: 30px 0;
+}

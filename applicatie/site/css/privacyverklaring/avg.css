@@ -1,0 +1,25 @@
+.container a:link {
+  text-decoration: none;
+  color: #e60056;
+  font-weight: 400;
+} 
+
+.container a:visited{
+  text-decoration: none;
+  color: #8B00E6;
+  font-weight: 400;
+}
+
+.container a:hover{
+  text-decoration: none;
+  color: #FF0F67;
+  font-weight: 400;
+}
+
+.container a:active{
+  text-decoration: none;
+  color: #FF0F67;
+  font-weight: 400;
+  text-shadow: 0 4px 5px rgba(0,0,0,0.12);
+}
+

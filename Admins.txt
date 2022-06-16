@@ -1,0 +1,9 @@
+BeheerdersAccount #1
+Gebruikersnaam: iProject36_administrator
+Email: iproject36@eenmaalandermaal.com
+Antwoord veiligheidsvraag: Dopper
+
+BeheerdersAccount #2
+Gebruikersnaam: docentgebruikersnaam
+Email: Admin@veilingsite.nl
+Antwoord veiligheidsvraag: guppie

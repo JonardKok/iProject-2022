@@ -1,0 +1,8 @@
+# Directory listing uitzetten
+Options -Indexes
+
+# Blokkeer alle config files die niet zichtbaar zijn voor de gebruiker
+<Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
