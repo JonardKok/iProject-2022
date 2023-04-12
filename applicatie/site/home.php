@@ -16,7 +16,7 @@
   <header>
     <?php
     require_once '../app/applicatiefuncties.php';
-    debugMessages('off');
+    debugMessages('on');
     echo navbar();
     if (isset($_GET['error'])) {
       echo errorType($_GET['error']);

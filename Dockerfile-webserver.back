@@ -31,5 +31,5 @@ RUN apk add --no-cache autoconf make g++
 RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 RUN pecl config-set php_ini /usr/local/etc/php/php.ini
 
-RUN pecl install pdo_sqlsrv-5.10.1
+RUN pecl install pdo_sqlsrv
 RUN docker-php-ext-enable pdo_sqlsrv

@@ -1,11 +1,11 @@
 <?php
 // defined in 'variables.env'
-$db_host = 'database_server';   // Database Server Name
+$db_host = '172.22.0.3';   // Database Server Name
 $db_name = 'eenmaalandermaal';  // Database Name
 
 // defined in sql-script 'movies.sql'
-$db_user    = 'applicatie';         // Database username
-$db_password = '5_GXnMV&jN4J%QZY';  // Database user password
+$db_user    = 'sa';         // Database username
+$db_password = 'abc123!@#';  // Database user password
 
 
 try {
