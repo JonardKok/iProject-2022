@@ -14,3 +14,4 @@ test*
 
 #include encryption key for funzies
 !encryptionkey.env
+insertdatalocallocal.bat
