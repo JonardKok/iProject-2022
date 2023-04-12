@@ -11,3 +11,6 @@ test*
 
 #include variables.env
 !variables.env
+
+#include encryption key for funzies
+!encryptionkey.env
