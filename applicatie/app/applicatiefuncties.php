@@ -933,19 +933,19 @@ function getImage($number, $productId, $type, $seller)
     if (filter_var($productId, FILTER_VALIDATE_INT) && filter_var($number, FILTER_VALIDATE_INT)) {
         $images = getImageName(standardDataSafety($number), standardDataSafety($productId));
         $fileNames = [];
-        if (empty($images)) {
-            $images[0] = 'img/placeholder.png';
-            return $images;
-        }
-        if (trim($seller) === 'docentgebruikersnaam') {
-            for ($index = 0; $index < $number; $index++) {
-                array_push($fileNames, 'https://iproject36.ip.aimsites.nl/' . 'pics' .  '/' . $images[$index][$fileName]);
-            }
-        } else {
-            for ($index = 0; $index < $number; $index++) {
-                array_push($fileNames, $type .  '/' . $images[$index][$fileName]);
-            }
-        }
+        // if (empty($images)) {
+        $images[0] = 'img/placeholder.png';
+        return $images;
+        // }
+        // if (trim($seller) === 'docentgebruikersnaam') {
+        //     for ($index = 0; $index < $number; $index++) {
+        //         array_push($fileNames, 'DOMEIN/' . 'pics' .  '/' . $images[$index][$fileName]);
+        //     }
+        // } else {
+        //     for ($index = 0; $index < $number; $index++) {
+        //         array_push($fileNames, $type .  '/' . $images[$index][$fileName]);
+        //     }
+        // }
         return $fileNames;
     }
 }
@@ -1881,7 +1881,7 @@ function stuurVerificatieMail($code, $adress, $direction)
     <br>
     <p>Dank u wel dat u een account wilt aanmaken.</p>
     <p>Klik op deze link om te registreren:</p>
-    <p><a href =https://iproject36.ip.aimsites.nl/app/checkverificationcode.php?code=' . $code . '&destination=' . $direction . '&email=' . $adress . '>' . 'Registeren.<a></p>
+    <p><a href =https://DOMEIN/app/checkverificationcode.php?code=' . $code . '&destination=' . $direction . '&email=' . $adress . '>' . 'Registeren.<a></p>
     <br>
     <p>Met vriendelijke groet, </p>
     <p>Het Eenmaal Andermaal Team.</p>';
@@ -1896,7 +1896,7 @@ function stuurResetMail($code, $adress, $direction, $username)
     $body = '<p> Beste meneer/mevrouw,</p>
     <br>
     <p>Klik op deze link om uw wachtwoord te resetten:</p>
-    <p><a href =https://iproject36.ip.aimsites.nl/app/checkverificationcode.php?code=' . $code . '&destination=' . $direction . '&email=' . $adress . '&username=' . $username . '>' . 'Reset wachtwoord.<a></p>
+    <p><a href =https://DOMEIN/app/checkverificationcode.php?code=' . $code . '&destination=' . $direction . '&email=' . $adress . '&username=' . $username . '>' . 'Reset wachtwoord.<a></p>
     <br>
     <p>Met vriendelijke groet, </p>
     <p>Het Eenmaal Andermaal Team.</p>';
@@ -2406,7 +2406,7 @@ function deleteUserInteractions($deletionType, $userName, $code)
     <p> Dit betekent dat uw eenmaalandermaal account verwijderd zal worden. ' . ($deletionType ? 'U heeft 10 dagen de tijd om contact op te nemen' : 'U heeft 10 dagen te tijd om het account terug te zetten')  .  ', daarna zullen uw gegevens verwijderd worden. </p>
     <p> Heeft u vragen? Stuur dan gerust een email naar: <a href="mailto:Iproject36@han.nl">Iproject36@han.nl</a>. Of bel ons op: <a href="tel:+3161234567890">+31 6 1234567890</a> </p>
     ' . ($deletionType ? '' : '<p>' . 'U kunt op de knop klikken om de deactivatie ongedaan te maken:') . '
-    ' . ($deletionType ? '' : ' <a type="button" href="https://iproject36.ip.aimsites.nl/app/reinstateuser.php?name=' . $userName . '&token=' . $code . '" style="
+    ' . ($deletionType ? '' : ' <a type="button" href="https://DOMEIN/app/reinstateuser.php?name=' . $userName . '&token=' . $code . '" style="
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;

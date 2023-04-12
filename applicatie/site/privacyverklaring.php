@@ -38,7 +38,7 @@
         <p class="lead">
             IConcepts, gevestigd aan Professor Molkenboerstraat 3, 6524 RN Nijmegen, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.<br>
         <p>Contactgegevens:<br>
-            https://iproject36.ip.aimsites.nl<br>
+            https://DOMEIN<br>
             Professor Molkenboerstraat 3, 6524 RN Nijmegen<br>
             (024) 353 05 00<br>
             Hans is de Functionaris Gegevensbescherming van IConcepts. Hij is te bereiken via <a href="mailto:Iproject36@han.nl" target="_blank">Iproject36@han.nl</a>

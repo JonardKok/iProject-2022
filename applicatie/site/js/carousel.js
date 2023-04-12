@@ -5,7 +5,7 @@ function preview() {
 	let indicatorElement = document.getElementById("indicator");
 	for (var index = 0; index < nrOfImages; index++) {
 		console.log(images[index]);
-		if (images[index] != "https://iproject36.ip.aimsites.nl/pics/" && images[index] != "pics/") {
+		if (images[index] != "https://DOMEIN/site/img/placeholder.png" && images[index] != "pics/") {
 			let image = createImageTag(index);
 			carouselElement.innerHTML += image;
 
